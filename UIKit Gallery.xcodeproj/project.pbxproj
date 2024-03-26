@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		44ECBD612A1361940001B33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD602A1361940001B33C /* AppDelegate.swift */; };
 		44ECBD632A1361940001B33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD622A1361940001B33C /* SceneDelegate.swift */; };
-		44ECBD652A1361940001B33C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD642A1361940001B33C /* ViewController.swift */; };
-		44ECBD682A1361940001B33C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44ECBD662A1361940001B33C /* Main.storyboard */; };
+		44ECBD652A1361940001B33C /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD642A1361940001B33C /* GenericViewController.swift */; };
 		44ECBD6A2A1361960001B33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ECBD692A1361960001B33C /* Assets.xcassets */; };
 		44ECBD6D2A1361960001B33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44ECBD6B2A1361960001B33C /* LaunchScreen.storyboard */; };
-		44ECBD782A1361960001B33C /* JournalMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD772A1361960001B33C /* JournalMeTests.swift */; };
-		44ECBD822A1361960001B33C /* JournalMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD812A1361960001B33C /* JournalMeUITests.swift */; };
-		44ECBD842A1361960001B33C /* JournalMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ECBD832A1361960001B33C /* JournalMeUITestsLaunchTests.swift */; };
+		44EE72AA2BB2F80A00D13E19 /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE72A92BB2F80A00D13E19 /* LaunchTableViewController.swift */; };
+		44EE72AC2BB2F89000D13E19 /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE72AB2BB2F89000D13E19 /* LaunchTableViewCell.swift */; };
+		44EE72AE2BB2FE6E00D13E19 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE72AD2BB2FE6E00D13E19 /* ImageCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44ECBD5D2A1361940001B33C /* JournalMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ECBD5D2A1361940001B33C /* UIKit Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ECBD602A1361940001B33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44ECBD622A1361940001B33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44ECBD642A1361940001B33C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44ECBD672A1361940001B33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44ECBD642A1361940001B33C /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		44ECBD692A1361960001B33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44ECBD6C2A1361960001B33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44ECBD6E2A1361960001B33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44ECBD732A1361960001B33C /* JournalMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44ECBD772A1361960001B33C /* JournalMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMeTests.swift; sourceTree = "<group>"; };
-		44ECBD7D2A1361960001B33C /* JournalMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44ECBD812A1361960001B33C /* JournalMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMeUITests.swift; sourceTree = "<group>"; };
-		44ECBD832A1361960001B33C /* JournalMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44ECBD732A1361960001B33C /* UIKit GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit GalleryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ECBD7D2A1361960001B33C /* UIKit GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit GalleryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EE72A92BB2F80A00D13E19 /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
+		44EE72AB2BB2F89000D13E19 /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+		44EE72AD2BB2FE6E00D13E19 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +77,7 @@
 		44ECBD542A1361940001B33C = {
 			isa = PBXGroup;
 			children = (
-				44ECBD5F2A1361940001B33C /* JournalMe */,
-				44ECBD762A1361960001B33C /* JournalMeTests */,
-				44ECBD802A1361960001B33C /* JournalMeUITests */,
+				44ECBD5F2A1361940001B33C /* UIKit Gallery */,
 				44ECBD5E2A1361940001B33C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,50 +85,35 @@
 		44ECBD5E2A1361940001B33C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44ECBD5D2A1361940001B33C /* JournalMe.app */,
-				44ECBD732A1361960001B33C /* JournalMeTests.xctest */,
-				44ECBD7D2A1361960001B33C /* JournalMeUITests.xctest */,
+				44ECBD5D2A1361940001B33C /* UIKit Gallery.app */,
+				44ECBD732A1361960001B33C /* UIKit GalleryTests.xctest */,
+				44ECBD7D2A1361960001B33C /* UIKit GalleryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		44ECBD5F2A1361940001B33C /* JournalMe */ = {
+		44ECBD5F2A1361940001B33C /* UIKit Gallery */ = {
 			isa = PBXGroup;
 			children = (
 				44ECBD602A1361940001B33C /* AppDelegate.swift */,
 				44ECBD622A1361940001B33C /* SceneDelegate.swift */,
-				44ECBD642A1361940001B33C /* ViewController.swift */,
-				44ECBD662A1361940001B33C /* Main.storyboard */,
+				44ECBD642A1361940001B33C /* GenericViewController.swift */,
 				44ECBD692A1361960001B33C /* Assets.xcassets */,
 				44ECBD6B2A1361960001B33C /* LaunchScreen.storyboard */,
 				44ECBD6E2A1361960001B33C /* Info.plist */,
+				44EE72A92BB2F80A00D13E19 /* LaunchTableViewController.swift */,
+				44EE72AB2BB2F89000D13E19 /* LaunchTableViewCell.swift */,
+				44EE72AD2BB2FE6E00D13E19 /* ImageCollectionViewController.swift */,
 			);
-			path = JournalMe;
-			sourceTree = "<group>";
-		};
-		44ECBD762A1361960001B33C /* JournalMeTests */ = {
-			isa = PBXGroup;
-			children = (
-				44ECBD772A1361960001B33C /* JournalMeTests.swift */,
-			);
-			path = JournalMeTests;
-			sourceTree = "<group>";
-		};
-		44ECBD802A1361960001B33C /* JournalMeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				44ECBD812A1361960001B33C /* JournalMeUITests.swift */,
-				44ECBD832A1361960001B33C /* JournalMeUITestsLaunchTests.swift */,
-			);
-			path = JournalMeUITests;
+			path = "UIKit Gallery";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44ECBD5C2A1361940001B33C /* JournalMe */ = {
+		44ECBD5C2A1361940001B33C /* UIKit Gallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44ECBD872A1361960001B33C /* Build configuration list for PBXNativeTarget "JournalMe" */;
+			buildConfigurationList = 44ECBD872A1361960001B33C /* Build configuration list for PBXNativeTarget "UIKit Gallery" */;
 			buildPhases = (
 				44ECBD592A1361940001B33C /* Sources */,
 				44ECBD5A2A1361940001B33C /* Frameworks */,
@@ -142,14 +123,14 @@
 			);
 			dependencies = (
 			);
-			name = JournalMe;
+			name = "UIKit Gallery";
 			productName = JournalMe;
-			productReference = 44ECBD5D2A1361940001B33C /* JournalMe.app */;
+			productReference = 44ECBD5D2A1361940001B33C /* UIKit Gallery.app */;
 			productType = "com.apple.product-type.application";
 		};
-		44ECBD722A1361960001B33C /* JournalMeTests */ = {
+		44ECBD722A1361960001B33C /* UIKit GalleryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44ECBD8A2A1361960001B33C /* Build configuration list for PBXNativeTarget "JournalMeTests" */;
+			buildConfigurationList = 44ECBD8A2A1361960001B33C /* Build configuration list for PBXNativeTarget "UIKit GalleryTests" */;
 			buildPhases = (
 				44ECBD6F2A1361960001B33C /* Sources */,
 				44ECBD702A1361960001B33C /* Frameworks */,
@@ -160,14 +141,14 @@
 			dependencies = (
 				44ECBD752A1361960001B33C /* PBXTargetDependency */,
 			);
-			name = JournalMeTests;
+			name = "UIKit GalleryTests";
 			productName = JournalMeTests;
-			productReference = 44ECBD732A1361960001B33C /* JournalMeTests.xctest */;
+			productReference = 44ECBD732A1361960001B33C /* UIKit GalleryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		44ECBD7C2A1361960001B33C /* JournalMeUITests */ = {
+		44ECBD7C2A1361960001B33C /* UIKit GalleryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44ECBD8D2A1361960001B33C /* Build configuration list for PBXNativeTarget "JournalMeUITests" */;
+			buildConfigurationList = 44ECBD8D2A1361960001B33C /* Build configuration list for PBXNativeTarget "UIKit GalleryUITests" */;
 			buildPhases = (
 				44ECBD792A1361960001B33C /* Sources */,
 				44ECBD7A2A1361960001B33C /* Frameworks */,
@@ -178,9 +159,9 @@
 			dependencies = (
 				44ECBD7F2A1361960001B33C /* PBXTargetDependency */,
 			);
-			name = JournalMeUITests;
+			name = "UIKit GalleryUITests";
 			productName = JournalMeUITests;
-			productReference = 44ECBD7D2A1361960001B33C /* JournalMeUITests.xctest */;
+			productReference = 44ECBD7D2A1361960001B33C /* UIKit GalleryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 44ECBD582A1361940001B33C /* Build configuration list for PBXProject "JournalMe" */;
+			buildConfigurationList = 44ECBD582A1361940001B33C /* Build configuration list for PBXProject "UIKit Gallery" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44ECBD5C2A1361940001B33C /* JournalMe */,
-				44ECBD722A1361960001B33C /* JournalMeTests */,
-				44ECBD7C2A1361960001B33C /* JournalMeUITests */,
+				44ECBD5C2A1361940001B33C /* UIKit Gallery */,
+				44ECBD722A1361960001B33C /* UIKit GalleryTests */,
+				44ECBD7C2A1361960001B33C /* UIKit GalleryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +214,6 @@
 			files = (
 				44ECBD6D2A1361960001B33C /* LaunchScreen.storyboard in Resources */,
 				44ECBD6A2A1361960001B33C /* Assets.xcassets in Resources */,
-				44ECBD682A1361940001B33C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ECBD652A1361940001B33C /* ViewController.swift in Sources */,
+				44EE72AE2BB2FE6E00D13E19 /* ImageCollectionViewController.swift in Sources */,
+				44EE72AA2BB2F80A00D13E19 /* LaunchTableViewController.swift in Sources */,
+				44EE72AC2BB2F89000D13E19 /* LaunchTableViewCell.swift in Sources */,
+				44ECBD652A1361940001B33C /* GenericViewController.swift in Sources */,
 				44ECBD612A1361940001B33C /* AppDelegate.swift in Sources */,
 				44ECBD632A1361940001B33C /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ECBD782A1361960001B33C /* JournalMeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44ECBD842A1361960001B33C /* JournalMeUITestsLaunchTests.swift in Sources */,
-				44ECBD822A1361960001B33C /* JournalMeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,25 +266,17 @@
 /* Begin PBXTargetDependency section */
 		44ECBD752A1361960001B33C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44ECBD5C2A1361940001B33C /* JournalMe */;
+			target = 44ECBD5C2A1361940001B33C /* UIKit Gallery */;
 			targetProxy = 44ECBD742A1361960001B33C /* PBXContainerItemProxy */;
 		};
 		44ECBD7F2A1361960001B33C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44ECBD5C2A1361940001B33C /* JournalMe */;
+			target = 44ECBD5C2A1361940001B33C /* UIKit Gallery */;
 			targetProxy = 44ECBD7E2A1361960001B33C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44ECBD662A1361940001B33C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44ECBD672A1361940001B33C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44ECBD6B2A1361960001B33C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +411,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4LRD7293A6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JournalMe/Info.plist;
+				INFOPLIST_FILE = "UIKit Gallery/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = srijna.JournalMe;
+				PRODUCT_BUNDLE_IDENTIFIER = srijna.UIKitGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,10 +438,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4LRD7293A6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JournalMe/Info.plist;
+				INFOPLIST_FILE = "UIKit Gallery/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = srijna.JournalMe;
+				PRODUCT_BUNDLE_IDENTIFIER = srijna.UIKitGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -502,7 +472,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JournalMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JournalMe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKit Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UIKit Gallery";
 			};
 			name = Debug;
 		};
@@ -522,7 +492,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JournalMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JournalMe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKit Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UIKit Gallery";
 			};
 			name = Release;
 		};
@@ -565,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44ECBD582A1361940001B33C /* Build configuration list for PBXProject "JournalMe" */ = {
+		44ECBD582A1361940001B33C /* Build configuration list for PBXProject "UIKit Gallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44ECBD852A1361960001B33C /* Debug */,
@@ -574,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44ECBD872A1361960001B33C /* Build configuration list for PBXNativeTarget "JournalMe" */ = {
+		44ECBD872A1361960001B33C /* Build configuration list for PBXNativeTarget "UIKit Gallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44ECBD882A1361960001B33C /* Debug */,
@@ -583,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44ECBD8A2A1361960001B33C /* Build configuration list for PBXNativeTarget "JournalMeTests" */ = {
+		44ECBD8A2A1361960001B33C /* Build configuration list for PBXNativeTarget "UIKit GalleryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44ECBD8B2A1361960001B33C /* Debug */,
@@ -592,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44ECBD8D2A1361960001B33C /* Build configuration list for PBXNativeTarget "JournalMeUITests" */ = {
+		44ECBD8D2A1361960001B33C /* Build configuration list for PBXNativeTarget "UIKit GalleryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44ECBD8E2A1361960001B33C /* Debug */,
