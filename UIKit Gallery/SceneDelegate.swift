@@ -19,17 +19,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let navController1 = UINavigationController(rootViewController: GenericViewController())
-        let navController2 = UINavigationController(rootViewController: LaunchTableViewController())
-        let navController3 = UINavigationController(rootViewController: ImageCollectionViewController())
         
-        let tabBar = UITabBarController()
-        tabBar.viewControllers = [navController1, navController2, navController3]
-        navController1.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 0)
-        navController2.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
-        navController3.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+        /// this is for tab view
+//        let navController1 = UINavigationController(rootViewController: GenericViewController())
+//        let navController2 = UINavigationController(rootViewController: LaunchTableViewController())
+//        let navController3 = UINavigationController(rootViewController: ImageCollectionViewController())
+//        
+//        let tabBar = UITabBarController()
+//        tabBar.viewControllers = [navController1, navController2, navController3]
+//        navController1.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 0)
+//        navController2.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
+//        navController3.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+//        
+//        window?.rootViewController = tabBar
         
-        window?.rootViewController = tabBar
+        window?.rootViewController = UINavigationController(rootViewController: LaunchTableViewController())
         window?.makeKeyAndVisible()
     }
 

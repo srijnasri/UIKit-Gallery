@@ -7,9 +7,19 @@
 
 import UIKit
 
+enum Components: String, CaseIterable {
+    case UIButton
+    case UIdatePicker
+    case UIStepper
+    case UISlider
+    case UISwitch
+    case UITextField
+}
+
 class LaunchTableViewController: UITableViewController {
 
-    let components = ["UIButton", "UIdatePicker", "UIStepper"]
+    let components: [Components] = Components.allCases.map { $0 }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +44,25 @@ class LaunchTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        cell.textLabel?.text = components[indexPath.row]
+        cell.textLabel?.text = components[indexPath.row].rawValue
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch components[indexPath.row] {
-        case "UIButton":
-            print("Yayy")
-        default:
-            print("On no")
-        }
+        navigationController?.pushViewController(GenericViewController(selectedComponent: components[indexPath.row]), animated: true)
+//        switch  {
+//        case .UIButton:
+//            
+//        case .UISlider:
+//            print("this is slider")
+//        case .UIStepper:
+//            print("This is stepper")
+//        case .UISwitch:
+//            print("this is switch")
+//        case .UIdatePicker:
+//            print("this is picker")
+//        case .UITextField:
+//            print("this is text field")
+//        }
     }
 }

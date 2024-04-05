@@ -8,25 +8,33 @@
 import UIKit
 
 class GenericViewController: UIViewController {
+    var selectedComponent: Components?
     
+    init(selectedComponent: Components? = nil) {
+        self.selectedComponent = selectedComponent
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private lazy var scrollView: UIView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-//        scrollView.isScrollEnabled = true
         return scrollView
     }()
     
     private lazy var container: UIView = {
         let myView = UIView()
-        myView.backgroundColor = .darkGray
+        myView.backgroundColor = .gray
         myView.translatesAutoresizingMaskIntoConstraints = false
         return myView
     }()
     
     private lazy var label: UILabel = {
         let label = UILabel()
-        label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         label.numberOfLines = 0
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -97,10 +105,31 @@ class GenericViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Components"
-        navigationItem.rightBarButtonItem = .init(systemItem: .add)
+//        navigationItem.rightBarButtonItem = .init(systemItem: .add)
         view.backgroundColor = .white
-        setUpViews()
+        switch selectedComponent {
+        case .UIButton:
+            title = selectedComponent?.rawValue
+            setUpViews()
+        case .UIdatePicker:
+            title = selectedComponent?.rawValue
+            showDatePicker()
+        case .UIStepper:
+            title = selectedComponent?.rawValue
+            showStepper()
+        case .UISlider:
+            title = selectedComponent?.rawValue
+            showSlider()
+        case .UISwitch:
+            title = selectedComponent?.rawValue
+            showSwitch()
+        case .UITextField:
+            title = selectedComponent?.rawValue
+            showTextField()
+        case nil:
+            print("Nothing selected")
+        }
+        
     }
 
     private func setUpViews() {
@@ -139,13 +168,7 @@ class GenericViewController: UIViewController {
     }
     
     @objc func buttonPressed() {
-        label.removeFromSuperview()
-        button.removeFromSuperview()
-        showTextField()
-        //        showDatePicker()
-        //        showSlider()
-        //        showStepper()
-        //        showSwitch()
+        label.text = "You pressed the button."
     }
     
     @objc func sliderValueChanged() {
@@ -159,10 +182,10 @@ class GenericViewController: UIViewController {
     func showTextField() {
         view.addSubview(textView)
         NSLayoutConstraint.activate([
-            textView.topAnchor.constraint(equalTo: container.topAnchor, constant: 10),
-            textView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 10),
-            textView.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -10),
-            textView.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -10)
+            textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            textView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
+            textView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
+            textView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
         ])
     }
     

@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4451113A2BBFF2DA00710F21 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		44ECBD542A1361940001B33C = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +102,7 @@
 		44ECBD5F2A1361940001B33C /* UIKit Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				4451113A2BBFF2DA00710F21 /* Components */,
 				44ECBD602A1361940001B33C /* AppDelegate.swift */,
 				44ECBD622A1361940001B33C /* SceneDelegate.swift */,
 				44ECBD642A1361940001B33C /* GenericViewController.swift */,
