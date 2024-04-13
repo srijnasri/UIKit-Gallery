@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 enum Components: String, CaseIterable {
     case UIButton
@@ -50,19 +51,21 @@ class LaunchTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(GenericViewController(selectedComponent: components[indexPath.row]), animated: true)
-//        switch  {
-//        case .UIButton:
-//            
-//        case .UISlider:
-//            print("this is slider")
-//        case .UIStepper:
-//            print("This is stepper")
-//        case .UISwitch:
-//            print("this is switch")
-//        case .UIdatePicker:
-//            print("this is picker")
-//        case .UITextField:
-//            print("this is text field")
-//        }
     }
+}
+
+struct LaunchTableViewRepresentable: UIViewControllerRepresentable {
+    typealias UIViewControllerType = LaunchTableViewController
+    
+    func makeUIViewController(context: Context) -> LaunchTableViewController {
+        LaunchTableViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: LaunchTableViewController, context: Context) {
+        // not needed
+    }
+}
+
+#Preview {
+    LaunchTableViewRepresentable()
 }
